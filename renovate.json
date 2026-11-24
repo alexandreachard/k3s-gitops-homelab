@@ -1,14 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "kubernetes": {
-    "fileMatch": [
-      "\\.yaml$"
+    "managerFilePatterns": [
+      "/\\.yaml$/"
     ]
   },
   "packageRules": [
     {
-      "matchPackagePrefixes": [
-        "ghcr.io/fluxcd/"
+      "matchPackageNames": [
+        "ghcr.io/fluxcd/**"
       ],
       "groupName": "fluxcd controllers",
       "groupSlug": "fluxcd-controllers"
